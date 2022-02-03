@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   const [fact, setFact] = useState([])
-   //const [currentPage, setCurrentPage] = useState()
   const [currentPage, setCurrentPage] = useLocalStorage("value","https://catfact.ninja/facts?limit=15")
   const [nextPage, setNextPage] = useState()
   const [prevPage, setPrevPage] = useState()
